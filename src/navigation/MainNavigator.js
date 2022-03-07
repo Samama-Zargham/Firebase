@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Adresses from '../screens/Adresses'
 import MealCredits from '../screens/MealCredits'
-import OderingDetails from "../screens/OderSummary"
+import OderingDetails from "../screens/OderingDetails"
 import Payment from "../screens/Payment"
 import OderSummary from '../screens/OderSummary'
 import colors from '../theme/colors'

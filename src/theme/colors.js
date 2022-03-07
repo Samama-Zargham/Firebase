@@ -4,5 +4,8 @@ export default colors = {
     TEXT_COLOR:"#565656",
     TEXTFADE_COLOR:"#949494",
     BACKGROUND : "#E5E5E5",
-    WHITE: "white"
+    WHITE: "white", 
+    FIELD:"#F2F2F2",
+    BLACK:"black",
+    
 }
