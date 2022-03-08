@@ -1,17 +1,18 @@
 import { View, Text, ScrollView } from 'react-native'
 import React, { useState } from 'react'
-import { ODERING } from '../styles/AllStyles'
+import { ODERING, WH } from '../styles/AllStyles'
 import {
-  Head,
-  Address,
-  PRESS,
-} from '../components/Reusable';
-import { OderDetail } from '../components/OrderDetails';
+    Head,
+    Address,
+    PRESS,
+} from './Reusable';
+import { OderDetail } from './OrderDetails';
 import colors from '../theme/colors';
-import { Icons } from '../components/AnyIcons';
-import { IconPlus } from '../components/IconPlus';
-import { ColorTxt } from '../components/ColorText';
-import Option from '../components/AddTip';
+import { Icons } from './AnyIcons';
+import { IconPlus } from './IconPlus';
+import { ColorTxt } from './ColorText';
+import Option from './AddTip';
+import { PICKER } from './Picker';
 
 
 const getFooter = (props) => {
@@ -60,11 +61,17 @@ const getHeader = (props) => {
                 icolor={colors.PRIMARY}
                 rowTxt="Delivery Window"
             />
+            <PICKER
+                label="6:30 PM-8:30 PM"
+                label1="6:30 PM-8:30 PM" 
+            />
             <ColorTxt
                 icolor={colors.PRIMARY}
                 t1="$1.49"
                 t2="  Delivery Fee."
             />
+
+
             <IconPlus
                 iname="bicycle"
                 itype={Icons.Ionicons}
@@ -84,7 +91,7 @@ const getHeader = (props) => {
             <Text style={[ODERING.txt]}>Redeem Voucher</Text>
             <Address
                 redeemPrice="$2.00"
-                height={55}
+                height={50}
                 pHolder="Enter Redeem Code"
                 backColor={colors.FIELD} />
             <PRESS
@@ -95,7 +102,7 @@ const getHeader = (props) => {
                 backColor={colors.PRIMARY}
                 txtColor={colors.WHITE}
                 title="Redeem" />
-        </ScrollView>
+        </ScrollView >
 
     )
 }

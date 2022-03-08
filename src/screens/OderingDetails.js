@@ -1,12 +1,10 @@
-import { View, FlatList } from 'react-native'
+import { View, FlatList, } from 'react-native'
 import React, { useState } from 'react'
 import { PAYMENT,  } from '../styles/AllStyles'
 import colors from '../theme/colors';
 import { ColorTxt } from '../components/ColorText';
-// import {Picker} from '@react-native-picker/picker';
 import { FoodData } from "../Data/Paymentdata"
-import { getHeader, getFooter } from '../components/Hooks';
-
+import { getHeader, getFooter } from '../components/Methods';
 export default function Payment(props) {
  
   const rendor = ({ item }) => {

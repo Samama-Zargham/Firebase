@@ -91,7 +91,6 @@ const ADRESS = StyleSheet.create({
     View1: {
         marginLeft: 20,
         paddingHorizontal: 20,
-        paddingVertical: 10,
         borderRadius: 10,
         flexDirection: "row",
         width: WH.width,
@@ -167,7 +166,7 @@ const ODERING = StyleSheet.create({
     headSvg1: {
         position: "absolute",
         alignSelf: "center",
-        top:180
+        top: 180
     },
     txt: {
         paddingHorizontal: 20,
@@ -207,6 +206,21 @@ const ODERING = StyleSheet.create({
         alignItems: "center",
         paddingHorizontal: 20,
         paddingVertical: 5
+    },
+    tip: {
+        backgroundColor: colors.FIELD,
+        textAlign: "center",
+        borderWidth: 2,
+        width: 75,
+        fontSize: 15,
+        height: 35,
+        borderRadius: 5,
+        paddingTop: 7
+    },
+    tipView:{
+        justifyContent: "space-between",
+        flexDirection: 'row',
+        paddingHorizontal: 22
     }
 
 })

@@ -1,7 +1,6 @@
 import React, { Component, } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native'
-import colors from '../theme/colors';
-
+import { ODERING } from '../styles/AllStyles';
 
 export default class Option extends Component {
     constructor(props) {
@@ -18,34 +17,17 @@ export default class Option extends Component {
     render() {
         return (
             <View
-                style={{
-                    justifyContent: "space-between",
-                    flexDirection: 'row',
-                    paddingHorizontal: 22
-                }}
-            >
+                style={ODERING.tipView}>
                 {this.props.options.map((option, index) => (
                     <TouchableOpacity
-                    activeOpacity={0.7}
+                        activeOpacity={0.7}
                         key={index}
                         onPress={() => {
                             this.props.onChange(option);
                             this.updateActiveOption(option);
-                        }}
-                    >
+                        }}>
                         <Text
-                            style={{
-                                backgroundColor: colors.FIELD,
-                                textAlign: "center",
-                                borderColor: this.state.activeOption === option ? colors.PRIMARY : colors.FIELD,
-                                borderWidth: 2,
-                                width: 75,
-                                fontSize: 15,
-                                height: 35,
-                                borderRadius: 5,
-                                paddingTop: 7
-                            }}
-                        >
+                            style={[ODERING.tip, { borderColor: this.state.activeOption === option ? colors.PRIMARY : colors.FIELD, }]}>
                             {option}
                         </Text>
                     </TouchableOpacity>

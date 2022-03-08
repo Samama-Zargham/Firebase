@@ -111,7 +111,8 @@ const Address = (props) => {
             { backgroundColor: props.backColor, },
             props.txt == "Office" && { margin: 15 },
             props.height && { height: props.height },
-            props.i1 && { alignItems: "center", }]}>
+            props.i1 && { alignItems: "center", },
+            props.height !== 50 && { paddingVertical: 10, }]}>
                 <View>
                     {props.i1 &&
                         <View style={ADRESS.iconView}>

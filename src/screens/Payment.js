@@ -11,6 +11,7 @@ import RadioButtonRN from 'radio-buttons-react-native';
 import colors from '../theme/colors';
 import { data } from '../Data/Paymentdata';
 import { MODAL } from '../components/PaymentModal';
+import { PICKER } from '../components/Picker';
 
 export default function Payment(props) {
   const [isVisible, setisVisible] = useState(false)
@@ -59,7 +60,9 @@ export default function Payment(props) {
           <Text style={[PAYMENT.dMethod, { marginRight: 210, paddingTop: 5 }]}>
             Drop Off option:
           </Text>
-          <Field pHolder="Choose drop of method" iname="keyboard-arrow-down" />
+          <PICKER
+            label="Choose drop of method"
+            label1="Drop down" />
           <Text style={PAYMENT.Login}>
             Billing
           </Text>
@@ -93,7 +96,7 @@ export default function Payment(props) {
             </Text>
             <SWITCH />
           </View>
-          <Text style={[PAYMENT.italic, {fontSize:13}]}>
+          <Text style={[PAYMENT.italic, { fontSize: 13 }]}>
             *All credit card payments are processed
             through a third party payment processor.
           </Text>
