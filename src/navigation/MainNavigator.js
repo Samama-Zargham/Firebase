@@ -17,12 +17,12 @@ export default function MainNavigator() {
             <StatusBar barStyle="dark-content" backgroundColor={colors.WHITE} animated />
             <Stack.Navigator screenOptions={{ headerShown: false }}>
 
-                <Stack.Screen name='First' component={First} />
-                <Stack.Screen name='MealCredits' component={MealCredits} />
+                {/* <Stack.Screen name='First' component={First} /> */}
+                {/* <Stack.Screen name='MealCredits' component={MealCredits} /> */}
                 <Stack.Screen name='Payment' component={Payment} />
-                <Stack.Screen name='Adresses' component={Adresses} />
-                <Stack.Screen name='OderingDetails' component={OderingDetails} />
-                <Stack.Screen name='OderSummary' component={OderSummary} />
+                {/* <Stack.Screen name='Adresses' component={Adresses} /> */}
+                {/* <Stack.Screen name='OderingDetails' component={OderingDetails} /> */}
+                {/* <Stack.Screen name='OderSummary' component={OderSummary} /> */}
 
 
             </Stack.Navigator>

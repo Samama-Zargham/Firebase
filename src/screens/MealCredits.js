@@ -51,7 +51,6 @@ export default function MealCredits(props) {
           </View>
         </View>
         <Text style={MEAL_STYLE.TotalAmount}>Total Amount</Text>
-
       </View>
       <PRESS
         disable={true}

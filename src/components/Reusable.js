@@ -57,6 +57,8 @@ const PRESS = ({ backColor, txtColor, title, onpress, disable, marginTop, margin
 
 // Text Field Component
 const Field = (props) => {
+    const [Value, setValue] = useState({})
+    const FormData = []
     return (
         <View style={[PAYMENT.FieldView, props.wdth && { width: props.wdth, margin: 10 }]}>
             {
@@ -67,8 +69,10 @@ const Field = (props) => {
                     source={require("../assets/images/mastercard.png")} />
             }
             <TextInput
+                secureTextEntry={props.pass && true}
                 placeholder={props.pHolder}
                 style={PAYMENT.Field}
+                onChangeText={(Value) => props.setChangeText(Value)}
             />
             {
                 props.iname &&
